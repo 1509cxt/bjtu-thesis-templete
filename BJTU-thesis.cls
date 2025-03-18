@@ -216,9 +216,6 @@
 	\addcontentsline{toc}{chapter}{序言}
 }{}
 
-\usepackage{letterspace}
-\newcommand{\spacedtext}[1]{\textls[200]{#1}}
-
 %%定义正文的页眉页脚格式
 \def\BJTU@chapter{}
 \fancypagestyle{BJTU@heading}{
