@@ -216,18 +216,21 @@
 	\addcontentsline{toc}{chapter}{序言}
 }{}
 
+\usepackage{letterspace}
+\newcommand{\spacedtext}[1]{\textls[200]{#1}}
+
 %%定义正文的页眉页脚格式
 \def\BJTU@chapter{}
 \fancypagestyle{BJTU@heading}{
 	\fancyhf{}
-	\fancyhead[CE]{
+	\fancyhead[L]{
 		\if@isDoctor
 		北京交通大学博士学位论文
 		\else
 		北京交通大学硕士学位论文
 		\fi
 	}
-	\fancyhead[CO]{\leftmark}
+	\fancyhead[R]{\leftmark}
 	\fancyfoot[C]{\thepage}
 
 }
@@ -361,14 +364,14 @@ twoside
 	\vspace{50pt}
 	\begin{figure}
 		\centering
-		\includegraphics*[]{logo.png}
+		\includegraphics*[width=11.2cm]{schoolName.pdf}
 	\end{figure}
 	\vspace{18pt}
 	\begin{center}
 		\if@isDoctor
 		{\heiti\zihao{2}\bfseries{\textbf{博士学位论文}\\}}
 		\else
-		{\songti\zihao{2}\bfseries{硕士学位论文\\}}		
+		{\songti\zihao{2}\bfseries{硕\hspace{0.2em}士\hspace{0.2em}学\hspace{0.2em}位\hspace{0.2em}论\hspace{0.2em}文\\}}		
 		\fi
 		\vspace{44pt}
 		{\songti\zihao{-3}\BJTU@value@title\\}
