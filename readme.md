@@ -1,17 +1,47 @@
-# 北京交通大学博士毕业论文latex模版
+# 北京交通大学 研究生学位论文Latex模版
 
-###################################
-# 2021年1月3日最新更新，更新了奇偶页页眉页脚区别，更新了自动空白页， 更新了奇偶页页边距区别（根据学校要求，考虑到装订的时候，奇偶页左右边距应该不同）。
-#################################
 
-- 使用texlive2019  xelatex编译
-- 基本满足学术硕士博士格式要求
+
+## 更新记录
+
+### 2025年3月 更新
+学校logo换成了高清的官方论文模板贴图, 页眉也模仿官网word论文模板进行了更新. 
+
+整体上更加贴近官方论文模板.
+
+
+### 2021年1月3日更新
+
+更新了奇偶页页眉页脚区别，更新了自动空白页，更新了奇偶页页边距区别（根据学校要求，考虑到装订的时候，奇偶页左右边距应该不同）。
+
+## 使用须知
+
+- 可使用texlive, 可使用overleaf, 编译器选择xelatex
+- 基本满足 硕士 / 博士 学位论文格式要求:
+
+  请在 **demo.tex** 的第一行进行选择
+
+  **博士**: 
+  ```tex
+  \documentclass[Doctor]{BJTU-thesis}
+  ```
+
+    **学术型硕士**: 
+  ```tex
+  \documentclass[AcMaster]{BJTU-thesis}
+  ```
+
+    **专业硕士 / 工程硕士**: 
+  ```tex
+  \documentclass[EnMaster]{BJTU-thesis}
+  ```
+
 - 有基本使用示例
 - 参考
     - https://github.com/xiaoleeza/bjtu-thesis
     - https://github.com/Jamiesona/bjtu-thesis
 
-- 推荐安装最新版texlive ， 官网为：
+- 推荐安装最新版texlive，官网为：
 
 > https://www.tug.org/texlive/
 
@@ -71,5 +101,3 @@ docker 也可以用我push到阿里云的镜像，  直接pull这个也行
 
 > registry.cn-hangzhou.aliyuncs.com/yuewang/xfdywy:latex
 
-
-.
